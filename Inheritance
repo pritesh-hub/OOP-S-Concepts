@@ -1,0 +1,31 @@
+//Single level inheritance example 
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+    public : 
+            void speak()
+            {
+                cout<<"animal can speak "<<endl;
+            }
+            void eat()
+            {
+                cout<<"animal can eat"<<endl;
+            }
+};
+class Dog : public Animal
+{
+    public : 
+            void bark()
+            {
+                cout<<"dog can bark"<<endl;
+            }
+};
+int main()
+{
+    Dog d;
+    d.eat();
+    d.speak();
+    return 0;
+}
