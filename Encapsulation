@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+class student 
+{
+    private : 
+                int rollnumber;
+                int age;
+                string name;
+    public : 
+                void setrollnumber(int r)
+                {
+                    rollnumber= r;
+                }
+                int getrollnumber()
+                {
+                    return rollnumber;
+                }
+                void setage(int a)
+                {
+                    age=a;
+                }
+                int getage()
+                {
+                    return age;
+                }
+                
+                void setname(string n)
+                {
+                    name = n;
+                }
+                string getname()
+                {
+                    return name;
+                }
+};
+int main()
+{
+    student object;
+    object.setrollnumber(101);
+    object.setage(18);
+    object.setname("Pritesh");
+    
+    cout<<object.getrollnumber()<<endl;
+    cout<<object.getage()<<endl;
+    cout<<object.getname()<<endl;
+    
+    return 0;
+}
