@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+    public : 
+            virtual void sleep()=0;
+            
+            void eat()
+            {
+                cout<<"Animal can it ";
+            }
+};
+class dog : public Animal 
+{
+    public : 
+            void sleep()
+            {
+                cout<<"Animal Can Sleep";
+            }
+};
+int main ()
+{
+    dog d;
+    d.sleep();
+    return 0;
+}
