@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+// Abstract Class
+class animal 
+{
+    public : 
+            virtual void sound()=0;  // Pure virtual function
+};
+// Derived class must override the pure virtual function
+class dog : public animal
+{
+    public :
+            void sound()
+            {
+                cout<<"Sound Bark"<<endl;
+            }
+};
+int main ()
+{
+    dog d ;
+    d.sound();
+    return 0;
+}
